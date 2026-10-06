@@ -1,0 +1,9 @@
+.venv/*
+.idea/*
+.env
+__pycache__/*
+practice/*
+.streamlit/*
+*.pyc
+.DS_Store
+~$*.docx
