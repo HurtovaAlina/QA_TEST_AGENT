@@ -233,13 +233,19 @@ def check_test_coverage(requirement: str, fdd_content, existing_test_cases: str)
     Do not add explanations.
     
     Return exactly:
-    
+
     {{
         "covered": true,
-        "reason": "Short explanation based on the existing test steps"
+        "reason": "Short explanation based on the existing test steps",
+        "missing_requirements": []
     }}
+    
+    If "covered" is false, "missing_requirements" must contain
+    the specific requirement parts that are NOT covered by the existing test cases.
+    
+    If "covered" is true, "missing_requirements" must be an empty list.
 
-    """
+"""
     response = llm.invoke(prompt)
 
     content = response.content

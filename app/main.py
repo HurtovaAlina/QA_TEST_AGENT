@@ -133,7 +133,12 @@ if __name__ == "__main__":
 
     print("\nGenerating missing test cases...")
 
-    new_test_cases = generate_test_cases(requirement, feature)
+    missing_requirements = coverage.get("missing_requirements", [])
+
+    new_test_cases = generate_test_cases(
+        "\n".join(missing_requirements),
+        feature
+    )
 
     # --------------------------------
     # 10. Show generated test cases
