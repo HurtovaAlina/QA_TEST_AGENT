@@ -40,6 +40,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI - запускає А�
 
 import pandas as pd - бібліотека дозволяє працювати з таблицями Excel sheet → pandas DataFrame
 
+import streamlit as st - бібліотека, робить візуалізацію
+
 ========================================================================================================================
 Vector DB
 │
