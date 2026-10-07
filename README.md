@@ -813,7 +813,6 @@ This is important for checking duplicate or missing test coverage.
 | python-docx | DOCX processing |
 | pandas | Excel / DataFrame processing |
 | openpyxl | Excel file manipulation |
-| Pydantic | Data validation |
 | python-dotenv | Environment variables |
 | Streamlit | User interface |
 
