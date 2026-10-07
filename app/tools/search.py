@@ -8,14 +8,3 @@ def search(query: str) -> list[Document]:
     results = vector_store.similarity_search(query, k=4)
 
     return results
-
-# if __name__ == "__main__":
-#     results = search(
-#         "What are the password requirements for User Registration?"
-#     )
-#
-#     for result in results:
-#         print("\n--- RESULT ---")
-#         print("ID:", result.id)
-#         print("Feature:", result.metadata.get("feature"))
-#         print("Text:", result.page_content)
