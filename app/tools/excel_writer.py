@@ -69,13 +69,13 @@ def add_test_cases_to_excel(file_path: str, sheet_name: str, test_cases):
             sheet.cell(
                 row=row,
                 column=3,
-                value=step["test_step"]
+                value=""
             )
 
             sheet.cell(
                 row=row,
                 column=4,
-                value=""
+                value=step["test_step"]
             )
 
             sheet.cell(
